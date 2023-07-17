@@ -6,7 +6,7 @@ webhookURL = os.getenv('WEBHOOK_URL')
 
 webhook = dwh.Discord(url=webhookURL)
 
-for i in range(12):
-    webhook.post(content="ping test ||@Dragon||")
+for i in range(50):
+    webhook.post(content="ping test ||@Everyone||")
 
 # echgodags
