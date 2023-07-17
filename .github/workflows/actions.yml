@@ -25,4 +25,4 @@ jobs:
       - name: execute py script # run main.py
         env:
             WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-        run: python spam ping.py
+        run: python main.py
