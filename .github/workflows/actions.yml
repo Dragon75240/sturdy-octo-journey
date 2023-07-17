@@ -25,5 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: run formatting
+        run: |
+          chmod +x format.sh
+          format.sh
+
       - name: execute py script # run main.py
         run: python main.py
