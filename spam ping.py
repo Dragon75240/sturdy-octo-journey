@@ -1,5 +1,8 @@
+import os
 from discord import Webhook
-import aiohttp
 
-webhook = Webhook.from_url("")
+
+webhook = Webhook.from_url(os.environ("WEBHOOK_URL"))
+
+webhook.send("sad", username="sdasd")
 
