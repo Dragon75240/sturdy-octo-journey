@@ -1,13 +1,12 @@
+import http.client
 import os
-import aiohttp
 from discord import Webhook
 
 webhookURL = os.getenv('WEBHOOK_URL')
 
-async def main():
-    async with aiohttp.ClientSession() as session:
-        webhook = Webhook.from_url(webhookURL, session=session)
+connection = http.client.HTTPConnection(webhookURL)
 
-        webhook.send("sad", username="sdasd")
+webhook = Webhook.from_url(webhookURL, session=connection)
+webhook.send("sad", username="sdasd")
 
-main()
+connection.close()
