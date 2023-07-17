@@ -1,12 +1,9 @@
 import http.client
 import os
-from discord import Webhook
+import discordwebhook as dwh
 
 webhookURL = os.getenv('WEBHOOK_URL')
 
-connection = http.client.HTTPSConnection(webhookURL)
+webhook = dwh.Discord(url=webhookURL)
 
-webhook = Webhook.from_url(webhookURL, session=connection)
-webhook.send("sad", username="sdasd")
-
-connection.close()
+webhook.post(content="sdfadsf")
