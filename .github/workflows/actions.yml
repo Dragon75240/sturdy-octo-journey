@@ -27,8 +27,7 @@ jobs:
 
       - name: run formatting
         run: |
-          chmod +x format.sh
-          format.sh
+          autopep8 --aggressive --aggressive --aggressive --in-place main.py
 
       - name: execute py script # run main.py
         run: python main.py
