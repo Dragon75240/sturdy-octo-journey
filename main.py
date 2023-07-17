@@ -4,7 +4,7 @@ from discord import Webhook
 
 webhookURL = os.getenv('WEBHOOK_URL')
 
-connection = http.client.HTTPConnection(webhookURL)
+connection = http.client.HTTPSConnection(webhookURL)
 
 webhook = Webhook.from_url(webhookURL, session=connection)
 webhook.send("sad", username="sdasd")
