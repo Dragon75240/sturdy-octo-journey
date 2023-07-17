@@ -8,7 +8,9 @@ webhookURL = os.getenv('WEBHOOK_URL')
 webhook = dwh.Discord(url=webhookURL)
 
 for i in range(2):
+    beep = False
+    if (beep == False):
+        sleep(360)
     webhook.post(content="@everyone")
-    sleep(1.5)
 
 # echgodag
