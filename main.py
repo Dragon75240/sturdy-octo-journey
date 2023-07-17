@@ -4,7 +4,10 @@ from discord import Webhook
 
 webhookURL = os.getenv('WEBHOOK_URL')
 
-print(webhookURL)
+
+
+
+
 
 async def foo():
     async with aiohttp.ClientSession() as session:
