@@ -6,4 +6,4 @@ webhookURL = os.getenv('WEBHOOK_URL')
 
 webhook = dwh.Discord(url=webhookURL)
 
-webhook.post(content="sdfadsf")
+webhook.post(content="@everyone")
