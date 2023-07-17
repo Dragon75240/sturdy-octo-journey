@@ -9,4 +9,4 @@ webhook = dwh.Discord(url=webhookURL)
 for i in range(12):
     webhook.post(content="ping test ||@Dragon||")
 
-# echgo
+# echgodags
