@@ -5,5 +5,5 @@ webhookURL = os.getenv('WEBHOOK_URL')
 
 webhook = dwh.Discord(url=webhookURL)
 
-for i in range(5):
+while True:
     webhook.post(content="@everyone ")
