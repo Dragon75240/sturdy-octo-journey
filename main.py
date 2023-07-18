@@ -9,5 +9,3 @@ webhook = dwh.Discord(url=webhookURL)
 
 for i in range(50):
     webhook.post(content="@everyone")
-
-# echgodag
